@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "preci": "rm -fr node_modules",
+    "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "react": "18.0.0",
@@ -32,5 +34,6 @@
       "eslint src --fix",
       "git add"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
