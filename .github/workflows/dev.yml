@@ -1,0 +1,13 @@
+name: Develop Updated
+
+on:
+  push:
+    branches: [develop]
+    
+jobs:
+  versioning:
+    uses: ./.github/workflows/release.yml
+    with:
+      tag-suffix: dev
+      release-title: Dev Build
+    secrets: inherit
